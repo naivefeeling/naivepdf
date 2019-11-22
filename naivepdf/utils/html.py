@@ -24,7 +24,7 @@ def _html(f, data):
                     rowspan = 1
                     while rowspan < d['height'] - i and d['cells'][i + rowspan, j]['up_merged']:
                         rowspan += 1
-                    f.write(f"<td colspan='{colspan}' rowspan='{rowspan}'>{d['cells'][i, j]['text']}</td>")
+                    f.write(f"<td colspan='{colspan}' rowspan='{rowspan}' align='center'>{d['cells'][i, j]['text']}</td>")
                 f.write('</tr>')
             f.write('</table>')
 

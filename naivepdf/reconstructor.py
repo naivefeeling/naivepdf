@@ -316,13 +316,13 @@ class PageReconstructor(object):
                             break
                         current_cell_j -= 1
                         cells[(current_cell_i, current_cell_j)]['bounds'][2] = x
-                        cells[(current_cell_i, current_cell_j)]['bounds'][3] = y
+                        cells[(current_cell_i, current_cell_j)]['bounds'][1] = y
                     elif up_merged:
                         if not current_cell_i:
                             break
                         current_cell_i -= 1
                         cells[(current_cell_i, current_cell_j)]['bounds'][2] = x
-                        cells[(current_cell_i, current_cell_j)]['bounds'][3] = y
+                        cells[(current_cell_i, current_cell_j)]['bounds'][1] = y
                     left_merged = cells[(current_cell_i, current_cell_j)]['left_merged']
                     up_merged = cells[(current_cell_i, current_cell_j)]['up_merged']
 
