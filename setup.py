@@ -4,7 +4,7 @@ README = open('README.md', 'r').read()
 
 setup(
     name='naivepdf',
-    version='0.2',
+    version='0.3',
     author='naivefeeling',
     author_email='625424539@qq.com',
     long_description=README,
